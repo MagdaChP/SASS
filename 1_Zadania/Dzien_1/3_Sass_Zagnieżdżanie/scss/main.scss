@@ -1,0 +1,72 @@
+$menu-background: green;
+$menu-padding: 0 0 0 40px;
+$border-color: grey;
+$container-width: 1000px;
+
+.main-width{
+	width: $container-width;
+	li{
+		&:first-child{
+			color: red;
+			padding: 0 0 0 0;
+		}
+	}
+}
+
+.menu {
+	background-color: $menu-background;
+	overflow: hidden;
+	li {
+		padding: $menu-padding;
+		float: left;
+		list-style-type: none;
+	}
+}
+
+header{
+	border: 3px solid $border-color;
+}
+
+.my-links{
+	li{
+		&:first-child{
+			a{
+			color: orange;
+			&:hover{
+				color: red;
+			}
+			}
+		}
+		&:last-child{
+			a{
+			color: green;
+			&:hover{
+				color: red;
+			}
+			}
+		}
+		a{
+			&:hover{
+				color: red;
+			}
+		}
+	}
+}
+
+footer {
+	ul.menu{
+		li{
+			float: left;
+			width: 100px;
+			text-align: left;
+			padding: 0;
+			/*border: 1px solid red;*/
+			&:hover{
+				color: orange;
+			}
+			&:last-child{
+				text-align: right;
+			}
+		}
+	}
+}

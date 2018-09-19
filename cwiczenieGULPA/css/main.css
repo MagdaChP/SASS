@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.flag-ar {
+  background-image: url(sprite.png);
+  background-position: -15px 0px;
+  width: 15px;
+  height: 11px; }
+
+.flag-at {
+  background-image: url(sprite.png);
+  background-position: -60px -22px;
+  width: 15px;
+  height: 11px; }
+
+.flag-au {
+  background-image: url(sprite.png);
+  background-position: 0px -11px;
+  width: 15px;
+  height: 11px; }
+
+.flag-be {
+  background-image: url(sprite.png);
+  background-position: -15px -11px;
+  width: 15px;
+  height: 11px; }
+
+.flag-br {
+  background-image: url(sprite.png);
+  background-position: -30px 0px;
+  width: 15px;
+  height: 11px; }
+
+.flag-ca {
+  background-image: url(sprite.png);
+  background-position: -30px -11px;
+  width: 15px;
+  height: 11px; }
+
+.flag-ch {
+  background-image: url(sprite.png);
+  background-position: 0px -22px;
+  width: 15px;
+  height: 11px; }
+
+.flag-cl {
+  background-image: url(sprite.png);
+  background-position: -15px -22px;
+  width: 15px;
+  height: 11px; }
+
+.flag-cn {
+  background-image: url(sprite.png);
+  background-position: -30px -22px;
+  width: 15px;
+  height: 11px; }
+
+.flag-co {
+  background-image: url(sprite.png);
+  background-position: 0px -33px;
+  width: 15px;
+  height: 11px; }
+
+.flag-cr {
+  background-image: url(sprite.png);
+  background-position: -15px -33px;
+  width: 15px;
+  height: 11px; }
+
+.flag-cz {
+  background-image: url(sprite.png);
+  background-position: -30px -33px;
+  width: 15px;
+  height: 11px; }
+
+.flag-de {
+  background-image: url(sprite.png);
+  background-position: -45px 0px;
+  width: 15px;
+  height: 11px; }
+
+.flag-dk {
+  background-image: url(sprite.png);
+  background-position: -45px -11px;
+  width: 15px;
+  height: 11px; }
+
+.flag-es {
+  background-image: url(sprite.png);
+  background-position: -45px -22px;
+  width: 15px;
+  height: 11px; }
+
+.flag-fi {
+  background-image: url(sprite.png);
+  background-position: -45px -33px;
+  width: 15px;
+  height: 11px; }
+
+.flag-fr {
+  background-image: url(sprite.png);
+  background-position: 0px -44px;
+  width: 15px;
+  height: 11px; }
+
+.flag-gb {
+  background-image: url(sprite.png);
+  background-position: -15px -44px;
+  width: 15px;
+  height: 11px; }
+
+.flag-gr {
+  background-image: url(sprite.png);
+  background-position: -30px -44px;
+  width: 15px;
+  height: 11px; }
+
+.flag-hk {
+  background-image: url(sprite.png);
+  background-position: -45px -44px;
+  width: 15px;
+  height: 11px; }
+
+.flag-hu {
+  background-image: url(sprite.png);
+  background-position: -60px 0px;
+  width: 15px;
+  height: 11px; }
+
+.flag-id {
+  background-image: url(sprite.png);
+  background-position: -60px -11px;
+  width: 15px;
+  height: 11px; }
+
+.flag-ie {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 15px;
+  height: 11px; }
+
+.flag-il {
+  background-image: url(sprite.png);
+  background-position: -60px -33px;
+  width: 15px;
+  height: 11px; }
+
+.flag-in {
+  background-image: url(sprite.png);
+  background-position: -60px -44px;
+  width: 15px;
+  height: 11px; }
+
+.flag-it {
+  background-image: url(sprite.png);
+  background-position: 0px -55px;
+  width: 15px;
+  height: 11px; }
+
+.flag-jp {
+  background-image: url(sprite.png);
+  background-position: -15px -55px;
+  width: 15px;
+  height: 11px; }
+
+.flag-kr {
+  background-image: url(sprite.png);
+  background-position: -30px -55px;
+  width: 15px;
+  height: 11px; }
+
+.flag-mx {
+  background-image: url(sprite.png);
+  background-position: -45px -55px;
+  width: 15px;
+  height: 11px; }
+
+.flag-my {
+  background-image: url(sprite.png);
+  background-position: -60px -55px;
+  width: 15px;
+  height: 11px; }
+
+.flag-nl {
+  background-image: url(sprite.png);
+  background-position: -75px 0px;
+  width: 15px;
+  height: 11px; }
+
+.flag-no {
+  background-image: url(sprite.png);
+  background-position: -75px -11px;
+  width: 15px;
+  height: 11px; }
+
+.flag-nz {
+  background-image: url(sprite.png);
+  background-position: -75px -22px;
+  width: 15px;
+  height: 11px; }
+
+.flag-pe {
+  background-image: url(sprite.png);
+  background-position: -15px -77px;
+  width: 15px;
+  height: 10px; }
+
+.flag-pl {
+  background-image: url(sprite.png);
+  background-position: -75px -44px;
+  width: 15px;
+  height: 11px; }
+
+.flag-pt {
+  background-image: url(sprite.png);
+  background-position: -75px -55px;
+  width: 15px;
+  height: 11px; }
+
+.flag-ru {
+  background-image: url(sprite.png);
+  background-position: 0px -66px;
+  width: 15px;
+  height: 11px; }
+
+.flag-se {
+  background-image: url(sprite.png);
+  background-position: -15px -66px;
+  width: 15px;
+  height: 11px; }
+
+.flag-tr {
+  background-image: url(sprite.png);
+  background-position: -30px -66px;
+  width: 15px;
+  height: 11px; }
+
+.flag-tw {
+  background-image: url(sprite.png);
+  background-position: -45px -66px;
+  width: 15px;
+  height: 11px; }
+
+.flag-us {
+  background-image: url(sprite.png);
+  background-position: -60px -66px;
+  width: 15px;
+  height: 11px; }
+
+.flag-uy {
+  background-image: url(sprite.png);
+  background-position: -75px -66px;
+  width: 15px;
+  height: 11px; }
+
+.flag-vn {
+  background-image: url(sprite.png);
+  background-position: -75px -33px;
+  width: 15px;
+  height: 11px; }
+
+.flag-za {
+  background-image: url(sprite.png);
+  background-position: 0px -77px;
+  width: 15px;
+  height: 11px; }
+
+@keyframes dots {
+  0% {
+    content: '.'; }
+  60% {
+    content: '..'; }
+  80% {
+    content: '...'; } }
+
+span::after {
+  content: '';
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }

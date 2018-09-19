@@ -1,0 +1,35 @@
+html {
+  font-size: 10px; }
+
+.test_units {
+  font-size: 30px;
+  width: 25em;
+  height: 5em;
+  border: 2px solid green; }
+  .test_units header {
+    font-size: 50%; }
+
+.blocks {
+  display: flex;
+  flex-direction: column; }
+  .blocks .block {
+    width: 20%;
+    height: 10vh;
+    border: 1px solid orange; }
+    .blocks .block:last-of-type {
+      display: none; }
+  @media (min-width: 450px) {
+    .blocks {
+      flex-direction: row; }
+      .blocks .block:first-of-type {
+        display: none; }
+      .blocks .block:last-of-type {
+        display: block; } }
+  @media (min-width: 720px) {
+    .blocks .block {
+      display: none; }
+      .blocks .block:first-of-type, .blocks .block:last-of-type {
+        display: initial; } }
+  @media (min-width: 1024px) {
+    .blocks .block {
+      display: initial; } }

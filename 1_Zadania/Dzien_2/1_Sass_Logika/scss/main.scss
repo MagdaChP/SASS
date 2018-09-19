@@ -1,0 +1,42 @@
+$base-font-size: 14px;
+$base-line-height: 22px;
+
+@for $index from 1 through 4 {
+  h#{$index} {
+  font-size: $base-font-size / $index;
+  line-height: $base-line-height;
+}
+}
+
+$timeOfDay: evening;
+
+@mixin backGroundColor($timeOfDay) {
+  @if $timeOfDay == morning {
+    background-color: orange;
+  } @else if $timeOfDay == midday {
+    background-color: yellow;
+  } @else if $timeOfDay == evening {
+    background-color: navy;
+  } @else if $timeOfDay == night {
+    background-color: black;
+  }
+}
+
+html {
+  @include backGroundColor($timeOfDay);
+}
+
+@for $index from 1 through 10 {
+	.block_#{$index}{
+		@if $index%2 == 0 {
+			border: 10px solid orange;
+		} @else {
+			border: 10px solid blue;
+		}
+	}
+}
+
+
+
+
+

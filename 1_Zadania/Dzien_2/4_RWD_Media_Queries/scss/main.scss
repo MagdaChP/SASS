@@ -1,0 +1,63 @@
+/* html {
+	background: yellow;
+	@media(min-width: 420px){
+		background: blue;
+	}
+}
+
+//zadanie 2
+
+@mixin placeholder {
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		@content;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+		@content;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  @content;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  @content;
+	}
+}
+
+.my-form {
+	@include placeholder{
+		font-size: 10px;
+		color: red;
+	};
+}
+
+// zadanie 3
+
+html{
+	background: green;
+	@media(min-width: 400px){
+		background: purple;
+	}
+	@media(min-width: 800px){
+		background: orange;
+	}
+} */
+
+%box {
+	width: 100%;
+	height: 300px;
+	margin-left: 10px;
+	@media (min-width: 640px) {
+	  display: inline-block;
+	  width: 300px;
+	}
+}
+
+.wrapper {
+	.left {
+		@extend %box;
+		background-color: blue;
+	}
+	.right {
+		@extend %box;
+		background-color: green;
+	}
+}

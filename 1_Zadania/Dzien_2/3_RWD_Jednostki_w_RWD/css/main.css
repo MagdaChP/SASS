@@ -1,0 +1,60 @@
+.test {
+  font-size: 15px; }
+  .test p {
+    font-size: 200%; }
+  .test span {
+    font-size: 2em; }
+  .test strong {
+    font-size: 2rem; }
+
+.panel {
+  font-size: 40px; }
+  .panel p {
+    font-size: .5em; }
+
+.bg_box .box {
+  font-size: 2em;
+  width: 1.875em; }
+
+html {
+  font-size: 8px; }
+
+.container p {
+  font-size: 3rem; }
+
+.container .wolf_text {
+  border: 3px solid black;
+  width: 30rem;
+  box-sizing: border-box; }
+
+.winnie_the_pooh {
+  font-size: 10px; }
+  .winnie_the_pooh blockquote {
+    font-size: 300%; }
+
+.images {
+  width: 80%;
+  border: 5px solid green; }
+  .images .img_one {
+    background-image: url("../images/cat.jpg");
+    height: 150px;
+    width: 30%; }
+
+.test_height_grandpa {
+  border: 10px solid grey;
+  height: 50px; }
+  .test_height_grandpa .test_height_daddy {
+    border: 10px solid green;
+    height: 200%; }
+    .test_height_grandpa .test_height_daddy .test_height_baby {
+      border: 10px solid blue;
+      height: 50%; }
+
+.centered_text h1 {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  z-index: 10;
+  background: orange;
+  font-size: 18px;
+  transform: translate(-50%, -50%); }

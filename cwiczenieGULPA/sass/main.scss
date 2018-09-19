@@ -1,0 +1,21 @@
+@import '_reset.scss';
+@import '_sprite.scss';
+
+@include sprites($spritesheet-sprites);
+
+@keyframes dots {
+    0%   {content: '.';}
+    60%  {content: '..';}
+    80% {content: '...';}
+}
+
+span {
+	&::after {
+		content: '';
+		animation-name: dots;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+}
+
+

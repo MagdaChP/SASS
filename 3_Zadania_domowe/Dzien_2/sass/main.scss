@@ -1,0 +1,53 @@
+// Zadanie 1
+html {
+	font-size: 10px;
+}
+
+.test_units {
+	font-size: 30px;
+	width: 25em;
+	height: 5em;
+	border: 2px solid green;
+	header {
+		font-size: 50%;
+	}
+}
+
+.blocks{
+	display: flex;
+	flex-direction: column;
+	.block{
+		width: 20%;
+		height: 10vh;
+		border: 1px solid orange;
+		&:last-of-type{
+			display: none;
+		}
+	}
+	@media(min-width: 450px){
+		flex-direction: row;
+		.block{
+			&:first-of-type {
+			display: none;
+			}
+			&:last-of-type {
+			display: block;
+			}
+		}
+	}
+	@media (min-width: 720px) {
+		.block {
+			display: none;
+			&:first-of-type, &:last-of-type {
+				display: initial;
+			}
+		}
+	}
+	@media (min-width: 1024px) {
+		.block{
+		display: initial;
+		}
+	}
+}
+
+

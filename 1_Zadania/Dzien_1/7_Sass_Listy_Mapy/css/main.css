@@ -1,0 +1,21 @@
+.main-width header {
+  background: red;
+  width: 150px; }
+
+.main-width h2 {
+  background: blue;
+  width: 200px; }
+
+.main-width p {
+  background: green;
+  width: 300px; }
+
+body {
+  background: lightpink; }
+  body ul {
+    color: darkblue; }
+  body a {
+    color: darkgreen; }
+
+.menu {
+  width: min-width 100px; }

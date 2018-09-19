@@ -1,0 +1,44 @@
+section.images {
+    display: flex;
+    flex-direction: row;
+
+    .rabbit-background {
+        background-image: url('./../images/rabbit.png');
+        background-size: cover;
+        background-repeat: no-repeat;        
+    }
+
+    .rabbit-background, img {
+        height: 200px;
+        flex-basis: 50%;
+    }
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        .rabbit-background, img {
+            flex-basis: 100%;
+        }
+    }
+}
+
+section.one-image{
+	width: 300px;
+	height: 200px;
+	border: 2px solid green;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+section.one-image-bg {
+    width: 300px;
+    height: 200px;
+    border: 3px solid blue;
+    div.img-background {
+        background-image: url('./../images/rabbit.png');
+        height: 50%;
+        width: 50%;
+        background-size: cover;
+    }
+}

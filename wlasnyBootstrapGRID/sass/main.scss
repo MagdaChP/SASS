@@ -1,0 +1,47 @@
+$number-of-columns: 9;
+$base-column-width: 100% / $number-of-columns;
+$break-points: (sm: 420px, 
+				md: 720px, 
+				lg: 1024px, 
+				xl: 1200px);
+
+.grid-container {
+	display: flex;
+	flex-direction: column;
+	@for $index from 1 through $number-of-columns {
+			.col-xs-#{$index}{
+				border: 1px solid red;
+				text-align: center;
+				width: $index * $base-column-width;
+			}
+	}		
+}
+
+@each $name, $value in $break-points {
+		@media (min-width: $value){
+			.grid-container {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+					.row {
+						width: 100%;
+						height: 50px;
+						margin: 0;
+						display: flex;
+						flex-direction: row;
+						@for $index from 1 through $number-of-columns{
+							.col-#{$name}-#{$index}{
+								border: 1px solid red;
+								text-align: center;
+								width: $index * $base-column-width;
+							}
+						}
+					}
+			}
+		}
+}
+
+
+
+
+

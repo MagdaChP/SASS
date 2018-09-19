@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  flex-direction: column; }
+  .container .row {
+    display: flex;
+    flex-direction: row; }
+
+.col-xs-1 {
+  width: 11.11111%;
+  border: 3px solid pink; }
+
+.col-xs-2 {
+  width: 22.22222%;
+  border: 3px solid pink; }
+
+.col-xs-3 {
+  width: 33.33333%;
+  border: 3px solid pink; }
+
+.col-xs-4 {
+  width: 44.44444%;
+  border: 3px solid pink; }
+
+.col-xs-5 {
+  width: 55.55556%;
+  border: 3px solid pink; }
+
+.col-xs-6 {
+  width: 66.66667%;
+  border: 3px solid pink; }
+
+.col-xs-7 {
+  width: 77.77778%;
+  border: 3px solid pink; }
+
+.col-xs-8 {
+  width: 88.88889%;
+  border: 3px solid pink; }
+
+.col-xs-9 {
+  width: 100%;
+  border: 3px solid pink; }
+
+@media (min-width: 420px) {
+  .col-sm-1 {
+    width: 11.11111%;
+    border: 3px solid red; }
+  .col-sm-2 {
+    width: 22.22222%;
+    border: 3px solid red; }
+  .col-sm-3 {
+    width: 33.33333%;
+    border: 3px solid red; }
+  .col-sm-4 {
+    width: 44.44444%;
+    border: 3px solid red; }
+  .col-sm-5 {
+    width: 55.55556%;
+    border: 3px solid red; }
+  .col-sm-6 {
+    width: 66.66667%;
+    border: 3px solid red; }
+  .col-sm-7 {
+    width: 77.77778%;
+    border: 3px solid red; }
+  .col-sm-8 {
+    width: 88.88889%;
+    border: 3px solid red; }
+  .col-sm-9 {
+    width: 100%;
+    border: 3px solid red; } }
+
+@media (min-width: 720px) {
+  .col-md-1 {
+    width: 11.11111%;
+    border: 3px solid blue; }
+  .col-md-2 {
+    width: 22.22222%;
+    border: 3px solid blue; }
+  .col-md-3 {
+    width: 33.33333%;
+    border: 3px solid blue; }
+  .col-md-4 {
+    width: 44.44444%;
+    border: 3px solid blue; }
+  .col-md-5 {
+    width: 55.55556%;
+    border: 3px solid blue; }
+  .col-md-6 {
+    width: 66.66667%;
+    border: 3px solid blue; }
+  .col-md-7 {
+    width: 77.77778%;
+    border: 3px solid blue; }
+  .col-md-8 {
+    width: 88.88889%;
+    border: 3px solid blue; }
+  .col-md-9 {
+    width: 100%;
+    border: 3px solid blue; } }
+
+@media (min-width: 1024px) {
+  .col-lg-1 {
+    width: 11.11111%;
+    border: 3px solid green; }
+  .col-lg-2 {
+    width: 22.22222%;
+    border: 3px solid green; }
+  .col-lg-3 {
+    width: 33.33333%;
+    border: 3px solid green; }
+  .col-lg-4 {
+    width: 44.44444%;
+    border: 3px solid green; }
+  .col-lg-5 {
+    width: 55.55556%;
+    border: 3px solid green; }
+  .col-lg-6 {
+    width: 66.66667%;
+    border: 3px solid green; }
+  .col-lg-7 {
+    width: 77.77778%;
+    border: 3px solid green; }
+  .col-lg-8 {
+    width: 88.88889%;
+    border: 3px solid green; }
+  .col-lg-9 {
+    width: 100%;
+    border: 3px solid green; } }
+
+@media (min-width: 1366px) {
+  .col-xl-1 {
+    width: 11.11111%;
+    border: 3px solid violet; }
+  .col-xl-2 {
+    width: 22.22222%;
+    border: 3px solid violet; }
+  .col-xl-3 {
+    width: 33.33333%;
+    border: 3px solid violet; }
+  .col-xl-4 {
+    width: 44.44444%;
+    border: 3px solid violet; }
+  .col-xl-5 {
+    width: 55.55556%;
+    border: 3px solid violet; }
+  .col-xl-6 {
+    width: 66.66667%;
+    border: 3px solid violet; }
+  .col-xl-7 {
+    width: 77.77778%;
+    border: 3px solid violet; }
+  .col-xl-8 {
+    width: 88.88889%;
+    border: 3px solid violet; }
+  .col-xl-9 {
+    width: 100%;
+    border: 3px solid violet; } }

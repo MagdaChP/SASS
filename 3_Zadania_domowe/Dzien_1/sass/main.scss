@@ -1,0 +1,55 @@
+// Zadanie 1
+//Napisz mixin o nazwie `setTooltip`, za pomocą którego będzie można ustawić dowolny tekst na tooltipie. Jako argument przekaż tekst //do wyświetlenia oraz kolor tooltipa. Niech tooltipy pojawiają się po najechaniu na element `ul` o klasie `lista` znajdujący się w //pliku `index.html`
+//Podpowiedź: Stwórz odpowiedni pseudoelement np. :before lub :after.
+
+@mixin setTooltip($tipText, $tipColor) {
+	&::after{
+	content: $tipText;
+	background-color: $tipColor;
+	display: block;
+	width: 100px;
+	}
+}
+
+.list {
+	li {
+		&:hover{
+			@include setTooltip("tekst tooltipa", lightblue);
+		}
+	}
+}
+ 
+
+// Zadanie 2
+//Na podstawie poniższej mapy (za pomoca odpowiedniej funkcji sass), zrób listę zawierającą same wartości.
+//Następnie za pomocą odpowiedniej pętli ustaw wielkości dla nagłówków z pliku `index.html`, od największego do najmniejszego, //wykorzystując wartości listy.
+
+//```
+//$font-sizes: (
+// fs1: 100px,
+// fs2: 50px,
+// fs3: 6px
+// );
+//```
+//Skorzystaj: http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+$font-sizes: (
+ fs1: 100px,
+ fs2: 50px,
+ fs3: 6px
+ );
+ 
+$list-from-map: map-values($font-sizes);
+
+@for $index from 1 through 3 {
+	h#{$index}{
+	font-size: nth($list-from-map, $index);
+	}
+}
+
+
+
+
+ 
+ 
+

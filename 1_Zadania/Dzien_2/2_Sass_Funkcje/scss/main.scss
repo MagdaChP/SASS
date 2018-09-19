@@ -1,0 +1,36 @@
+$lighten-red: lighten(red, 40%);
+$number: 0.4;
+$percent: percentage($number);
+$color1: red;
+$color2: green;
+$mixedColors: mix($color1, $color2);
+
+
+html {
+	background: $lighten-red;
+}
+
+@for $index from 1 through 4 {
+	h#{$index}{
+		color: lighten(blue, 10% * $index);
+	}
+}
+
+p {
+	font-size: $percent;
+	background: $mixedColors;
+}
+
+@function sum($number1, $number2) {
+	@return $number1 + $number2;
+}
+
+span {
+	font-size: sum(10, 15) * 1px;
+}
+
+
+
+
+
+

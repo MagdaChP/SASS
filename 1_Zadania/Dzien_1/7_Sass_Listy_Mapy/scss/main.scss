@@ -1,0 +1,55 @@
+$list: red, blue, green;
+$map:(
+	width1: 150px,
+	width2: 200px,
+	width3: 300px
+);
+
+$colors-map:(
+	page-color: lightpink,
+	maintext: darkblue,
+	third: green,
+	forth: darkgreen,
+	color5: pink
+);
+
+.main-width{
+	header{
+		background: nth($list, 1);
+		width: map-get($map, width1);
+	}
+	h2{
+		background: nth($list, 2);
+		width: map-get($map, width2);
+	}
+	p{
+		background: nth($list, 3);
+		width: map-get($map, width3);
+	}
+}
+
+body {
+		background: map-get($colors-map, page-color);
+	ul{
+		color: map-get($colors-map, maintext);
+	}
+	a {
+		color: map-get($colors-map, forth);
+	}
+}
+
+//zadanie2
+$sizes-map: (
+	min-width: 100px,
+	max-width: 200px
+);
+
+$list-sizes: map-get($sizes-map, min-width), map-get($sizes-map, max-width);
+
+.menu{
+	width: nth($sizes-map, 1);
+}
+
+	
+	
+	

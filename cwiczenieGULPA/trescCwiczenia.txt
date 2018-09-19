@@ -1,0 +1,5 @@
+1. Zainicjalizuj projekt
+	- stwórz gulpfile.js
+	- podłączyć kompilację SASSa
+	- podłączyć wygenerowane pliki do HTMLa
+2. Otrzymasz folder ze zdjęciami

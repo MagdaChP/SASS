@@ -1,0 +1,39 @@
+$number-of-columns: 9;
+$base-column-width: 100% / $number-of-columns;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+$breakpoint-map: (
+  sm: (420px, red), 
+  md: (720px, blue),
+  lg: (1024px, green),
+  xl: (1366px, violet)
+);
+
+@mixin generate-grid-cell($name, $base-width, $color, $column-number) {
+    @for $index from 1 through $column-number {
+    .col-#{$name}-#{$index} {
+      width: $base-width * $index;
+      border: 3px solid $color;
+    }
+  }
+}
+
+@include generate-grid-cell(xs, $base-column-width, pink, $number-of-columns);
+
+@each $key, $value in $breakpoint-map {
+    $breakpoint-value: nth($value, 1);
+    $color: nth($value, 2);
+
+    @media (min-width: $breakpoint-value) {
+      @include generate-grid-cell($key, $base-column-width, $color, $number-of-columns);
+    }
+}
+

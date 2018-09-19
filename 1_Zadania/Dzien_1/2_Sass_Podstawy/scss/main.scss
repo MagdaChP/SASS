@@ -1,0 +1,18 @@
+$main-color: blue;
+$text-color: pink;
+$sectionPadding: 10px 0 20px 0;
+
+header {
+	.menu{
+		li{
+			color: $text-color;
+		}
+	}
+	a{
+		color: $text-color;
+	}
+}
+
+section{
+	padding: $sectionPadding;
+}

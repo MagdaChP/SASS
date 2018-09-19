@@ -1,0 +1,49 @@
+/* html {
+	background: yellow;
+	@media(min-width: 420px){
+		background: blue;
+	}
+} */
+.my-form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 10px;
+  color: red; }
+
+.my-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 10px;
+  color: red; }
+
+.my-form :-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 10px;
+  color: red; }
+
+.my-form :-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 10px;
+  color: red; }
+
+html {
+  background: green; }
+  @media (min-width: 400px) {
+    html {
+      background: purple; } }
+  @media (min-width: 800px) {
+    html {
+      background: orange; } }
+
+.wrapper .left, .wrapper .right {
+  width: 100%;
+  height: 300px;
+  margin-left: 10px; }
+  @media (min-width: 640px) {
+    .wrapper .left, .wrapper .right {
+      display: inline-block;
+      width: 300px; } }
+
+.wrapper .left {
+  background-color: blue; }
+
+.wrapper .right {
+  background-color: green; }

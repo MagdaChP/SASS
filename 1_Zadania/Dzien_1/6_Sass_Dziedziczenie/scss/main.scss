@@ -1,0 +1,45 @@
+%clearfix {
+  &:before, &:after {
+    clear: both;
+	content: "";
+	display: block;
+  }
+}
+
+%box-size {
+	width: 100px;
+	height: 50px;
+	border: 1px solid grey;
+}
+
+.container{
+	> div {
+	@extend %box-size;
+	}
+	.success{
+	background-color: green;
+	}
+	.error{
+	background-color: red;
+	}
+	.info{
+	background-color: blue;
+	}
+	
+}
+
+.test-mixin {
+  @extend %clearfix;
+  .left_box {
+    border: 1px solid black;
+    float: left;
+    width: 40%;
+    height: 50px;
+  }
+  .right_box {
+    border: 1px solid orange;
+    float: right;
+    width: 40%;
+    height: 50px;
+  }
+}

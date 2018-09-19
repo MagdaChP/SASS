@@ -1,0 +1,30 @@
+.test-mixin:before, .test-mixin:after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.container > div {
+  width: 100px;
+  height: 50px;
+  border: 1px solid grey; }
+
+.container .success {
+  background-color: green; }
+
+.container .error {
+  background-color: red; }
+
+.container .info {
+  background-color: blue; }
+
+.test-mixin .left_box {
+  border: 1px solid black;
+  float: left;
+  width: 40%;
+  height: 50px; }
+
+.test-mixin .right_box {
+  border: 1px solid orange;
+  float: right;
+  width: 40%;
+  height: 50px; }
